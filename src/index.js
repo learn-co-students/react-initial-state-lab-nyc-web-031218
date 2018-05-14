@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import ImageSlider from './components/ImageSlider';
 import Bomb from './components/Bomb';
 
+
 ReactDOM.render(
   <div>
     <ImageSlider></ImageSlider>
