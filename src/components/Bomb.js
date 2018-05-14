@@ -6,13 +6,14 @@ export default class Bomb extends React.Component {
     super(props);
 
     this.state = {
-      secondsLeft: `${props.initialCount}`
+      secondsLeft: props.initialCount
     }
   }
 
   render() {
+    const text = this.state.secondsLeft === 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`
     return (
-      <p>{this.state.secondsLeft} seconds left before I go boom!</p>
+      <p>{text}</p>
     );
   }
 }
