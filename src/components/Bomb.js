@@ -10,7 +10,7 @@ class Bomb extends React.Component {
     }
   }
 
-  render() {
+  render() { 
     return (
       <div>
       {
